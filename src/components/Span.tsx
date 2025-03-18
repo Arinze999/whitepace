@@ -2,12 +2,12 @@
 
 const Span = ({
   text,
-  yellow1,
+  // yellow1,
   blue,
   className,
 }: {
   text: string;
-  yellow1?: boolean;
+  // yellow1?: boolean;
   blue?: boolean;
   className?: string;
 }) => {

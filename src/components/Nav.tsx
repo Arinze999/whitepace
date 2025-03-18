@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const navItems = [
   { title: 'Products', dropdown: ['Product1', 'Product2', 'Product3'] },

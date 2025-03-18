@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 const Img = ({ className, src }: { className?: string; src: string }) => {
   return (

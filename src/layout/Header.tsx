@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import CompanyLogo from '../components/CompanyLogo';
 import HamburgerIcon2 from '../components/HamburgerIcon2';
 import MobileNav from '../components/MobileNav';

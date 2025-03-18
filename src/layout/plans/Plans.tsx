@@ -1,4 +1,4 @@
-import React from 'react';
+
 import PlansCard from './PlansCard';
 
 const Plans = () => {

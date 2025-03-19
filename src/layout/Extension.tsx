@@ -4,7 +4,7 @@ import Img from '../components/Img';
 
 const Extension = () => {
   return (
-    <div className="pt-[4rem] lg:pt-[6rem] h-fit lg:pb-[5rem] pb-[5rem] bg-myBlue text-myWhite z-[-2] relative">
+    <div className="pt-[4rem] lg:pt-[2rem] h-fit lg:pb-[2rem] pb-[5rem] bg-myBlue text-myWhite z-[-2] relative">
       <img src="/assets/svg/contourmobile.svg" alt="cont" className="absolute" />
       <div className="default-margin">
         <div className="flex justify-center items-center flex-col lg:flex-row lg:justify-between lg:items-start xl:items-center 2xl:place-items-center lg:gap-[1rem]">

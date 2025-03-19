@@ -1,4 +1,3 @@
-
 import Span from '../components/Span';
 import Button from '../components/Button';
 import Img from '../components/Img';
@@ -29,7 +28,7 @@ const Extension = () => {
           </div>
           <div className="w-full flex justify-center items-center">
             <Img
-              src="assets/imgs/"
+              src="/assets/imgs/extend31.png"
               className="mt-[4rem] lg:mt-[0] xl:h-[28rem] 2xl:h-[34rem] lg:h-[20rem] md:h-[23rem]"
             />
           </div>

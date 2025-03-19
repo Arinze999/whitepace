@@ -26,7 +26,7 @@ const Customize = () => {
           </div>
           <div className="w-full flex justify-center items-center">
             <Img
-              src="assets/imgs/"
+              src="/assets/imgs/custom.avif"
               className="mb-[4rem] mt-0 xl:h-[28rem] 2xl:h-[34rem] lg:h-[20rem] md:h-[23rem] md:mt-0"
             />
           </div>

@@ -25,7 +25,7 @@ const ProjectManage = () => {
             />
           </div>
           <div className="w-full flex justify-center items-center">
-            <Img src='assets/imgs/' className="mt-[4rem] xl:h-[28rem] 2xl:h-[34rem] lg:h-[20rem] md:h-[23rem]" />
+            <Img src='/assets/imgs/proman.jpg' className="mt-[4rem] xl:h-[28rem] 2xl:h-[34rem] lg:h-[20rem] md:h-[23rem]" />
           </div>
         </div>
       </div>

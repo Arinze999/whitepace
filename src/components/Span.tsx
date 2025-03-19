@@ -19,7 +19,7 @@ const Span = ({
           className={`${className} absolute bottom-[-1.25rem] right-0 w-full z-[-1]`}
         >
           <img
-            src="public/assets/svg/blueslash.svg"
+            src="/assets/imgs/blue.png"
             className="w-full h-auto object-cover"
           />
         </div>
@@ -28,7 +28,7 @@ const Span = ({
           className={`${className} absolute bottom-[-1.25rem] right-0 w-full z-[-1]`}
         >
           <img
-            src="public/assets/svg/yellowSlash.svg"
+            src="/assets/imgs/yellow.png"
             className="w-full h-auto object-cover"
           />
         </div>

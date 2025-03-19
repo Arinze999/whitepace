@@ -6,6 +6,7 @@ import Header from './layout/Header';
 import Hero from './layout/Hero';
 import ProjectManage from './layout/ProjectManage';
 import Work from './layout/Work';
+import YourWork from './layout/YourWork';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Extension />
       <Customize />
       <ChoosePlan />
+      <YourWork />
     </div>
   );
 }

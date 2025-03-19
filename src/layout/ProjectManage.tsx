@@ -1,4 +1,3 @@
-
 import Button from '../components/Button';
 import Img from '../components/Img';
 import Span from '../components/Span';
@@ -25,7 +24,11 @@ const ProjectManage = () => {
             />
           </div>
           <div className="w-full flex justify-center items-center">
-            <Img src='/assets/imgs/proman.jpg' className="mt-[4rem] xl:h-[28rem] 2xl:h-[34rem] lg:h-[20rem] md:h-[23rem]" />
+            <Img
+              src="/assets/imgs/proman.jpg"
+              className="mt-[4rem] xl:h-[28rem] 2xl:h-[34rem] lg:h-[20rem] md:h-[23rem] justify-center items-center"
+              claz=" min-w-[30rem]"
+            />
           </div>
         </div>
       </div>

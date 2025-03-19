@@ -1,13 +1,15 @@
 import { useState } from 'react';
 import PlansCard from './PlansCard';
+import ChevronLeftIcon from '../../assets/icons/ChevronLeftIcon';
+import ChevronRightIcon from '../../assets/icons/ChevronRightIcon';
 
 const Plans = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const cards = [
-    <PlansCard key={0} />,
-    <PlansCard key={1} />,
-    <PlansCard key={2} />,
+    <PlansCard key={0} free />,
+    <PlansCard key={1} personal />,
+    <PlansCard key={2} organization />,
   ];
 
   const prevSlide = () => {
@@ -29,7 +31,7 @@ const Plans = () => {
       index === (currentSlide === 0 ? totalSlides - 1 : currentSlide - 1) || // previous
       index === (currentSlide === totalSlides - 1 ? 0 : currentSlide + 1) // next
     ) {
-      return 'z-20 scale-90 opacity-50';
+      return 'z-20 scale-70 opacity-40';
     }
 
     return 'z-10 scale-75 opacity-30';
@@ -38,7 +40,7 @@ const Plans = () => {
   return (
     <div className="w-full max-w-5xl mx-auto relative h-[40rem] flex items-center justify-center">
       {/* Slides Wrapper */}
-      <div className="relative w-full h-full flex justify-center items-center">
+      <div className="relative w-full h-full flex justify-center items-center overflow-clip lg:overflow-visible">
         {cards.map((card, index) => {
           const positionOffset =
             index === currentSlide
@@ -67,17 +69,17 @@ const Plans = () => {
       {/* Left Arrow */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white text-gray-700 rounded-full shadow p-2 hover:bg-gray-100 z-40"
+        className="absolute cursor-pointer top-1/2 left-[-15px] transform -translate-y-1/2 bg-blue-300 opacity-40 hover:opacity-100 text-gray-700 rounded-full shadow p-2 hover:bg-gray-100 z-40"
       >
-        &#8592;
+        <ChevronLeftIcon />
       </button>
 
       {/* Right Arrow */}
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white text-gray-700 rounded-full shadow p-2 hover:bg-gray-100 z-40"
+        className="absolute cursor-pointer top-1/2 right-[-15px] transform -translate-y-1/2 bg-blue-300 opacity-40 hover:opacity-100 text-gray-700 rounded-full shadow p-2 hover:bg-gray-100 z-40"
       >
-        &#8594;
+        <ChevronRightIcon />
       </button>
 
       {/* Dots */}
@@ -87,7 +89,7 @@ const Plans = () => {
             key={index}
             onClick={() => setCurrentSlide(index)}
             className={`h-2 w-2 rounded-full transition-all duration-300 ${
-              currentSlide === index ? 'bg-blue-600 scale-125' : 'bg-gray-400'
+              currentSlide === index ? 'bg-myBlue scale-125' : 'bg-[#4F9CF9]'
             }`}
           />
         ))}

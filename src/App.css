@@ -4,7 +4,6 @@
 
 body {
   font-family: 'Roboto', serif;
-  border: 2px solid red;
 }
 
 @media (min-width: 320px) {

@@ -9,7 +9,7 @@ const Img = ({
 }) => {
   return (
     <div
-      className={`${className} w-full md:w-[36rem] xl:w-[43rem] 2xl:w-[51rem] h-[12rem] mt-[7rem] md:mt-[5rem] flex`}
+      className={`${className} w-full md:w-[36rem] xl:w-[43rem] 2xl:w-[51rem] h-[12rem] mt-[7rem] md:mt-[5rem] flex overflow-hidden`}
     >
       <img src={src} alt="img" className={`${claz} w-full h-auto object-contain`} />
     </div>

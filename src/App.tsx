@@ -9,6 +9,8 @@ import ProjectManage from './layout/ProjectManage';
 import Sponsors from './layout/Sponsors';
 import Work from './layout/Work';
 import YourWork from './layout/YourWork';
+import FavouriteApps from './layout/FavouriteApps';
+import Testimonials from './layout/testimonials/Testimonials';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
       <YourWork />
       <Data />
       <Sponsors />
+      <FavouriteApps />
+      <Testimonials />
     </div>
   );
 }

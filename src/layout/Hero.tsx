@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="h-fit pb-[5rem] lg:pb-[0] bg-myBlue text-myWhite">
       <div className="default-margin">
         {/* big web */}
-        <div className="w-full h-full hidden 2xl:block absolute top-0 left-0 opacity-50">
+        <div className="w-full h-full hidden 2xl:block absolute top-0 left-0 opacity-30">
           <img
             src="/assets/svg/wavewebbig.svg"
             alt="wavylines"
@@ -14,7 +14,7 @@ const Hero = () => {
           />
         </div>
         {/* web */}
-        <div className="w-full h-full hidden xl:block 2xl:hidden absolute top-0 left-0 opacity-50">
+        <div className="w-full h-full hidden xl:block 2xl:hidden absolute top-0 left-0 opacity-30">
           <img
             src="/assets/svg/waveweb.svg"
             alt="wavylines"
@@ -22,7 +22,7 @@ const Hero = () => {
           />
         </div>
         {/* small web */}
-        <div className="w-full h-full hidden lg:block xl:hidden absolute top-[-2.25rem] left-0 opacity-50">
+        <div className="w-full h-full hidden lg:block xl:hidden absolute top-[-2.25rem] left-0 opacity-30">
           <img
             src="/assets/svg/wavewebsmall.svg"
             alt="wavylines"
@@ -30,7 +30,7 @@ const Hero = () => {
           />
         </div>
         {/* tablet */}
-        <div className="w-full h-full hidden md:block mlg:top-[8.5rem] lg:hidden absolute top-0 left-0 opacity-50">
+        <div className="w-full h-full hidden md:block mlg:top-[8.5rem] lg:hidden absolute top-0 left-0 opacity-30">
           <img
             src="/assets/svg/wavetablet.svg"
             alt="wavylines"
@@ -38,7 +38,7 @@ const Hero = () => {
           />
         </div>
         {/* mobile */}
-        <div className="w-full auto md:hidden block absolute top-0 left-0 opacity-50">
+        <div className="w-full auto md:hidden block absolute top-0 left-0 opacity-30">
           <img
             src="/assets/svg/wavemobile.svg"
             alt="wavylines"

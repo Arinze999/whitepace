@@ -47,8 +47,22 @@ const Testimonials = () => {
           </div>
           <div className="w-full flex justify-center items-center">
             <div className="w-full max-w-5xl mx-auto relative h-[40rem] flex items-center justify-center">
+              <div className="hidden lg:flex justify-center items-center space-x-4">
+                <TestimonialCard
+                  free
+                  className="shadow-md transition transform duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+                />
+                <TestimonialCard
+                  personal
+                  className="shadow-md transition transform duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+                />
+                <TestimonialCard
+                  organization
+                  className="shadow-md transition transform duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+                />
+              </div>
               {/* Slides Wrapper */}
-              <div className="relative w-full h-full flex justify-center items-center overflow-clip lg:overflow-visible">
+              <div className="relative w-full h-full flex justify-center items-center overflow-clip lg:overflow-visible lg:hidden">
                 {cards.map((card, index) => {
                   const positionOffset =
                     index === currentSlide
@@ -77,9 +91,8 @@ const Testimonials = () => {
                   );
                 })}
               </div>
-
               {/* Dots */}
-              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-40">
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-40 lg:hidden">
                 {cards.map((_, index) => (
                   <button
                     key={index}

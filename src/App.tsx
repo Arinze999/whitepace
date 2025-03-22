@@ -11,6 +11,7 @@ import Work from './layout/Work';
 import YourWork from './layout/YourWork';
 import FavouriteApps from './layout/FavouriteApps';
 import Testimonials from './layout/testimonials/Testimonials';
+import Footer from './layout/footer/Footer';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Sponsors />
       <FavouriteApps />
       <Testimonials />
+      <Footer />
     </div>
   );
 }

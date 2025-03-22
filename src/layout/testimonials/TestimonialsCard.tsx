@@ -30,12 +30,14 @@ interface IPlansCard {
   personal?: boolean;
   free?: boolean;
   organization?: boolean;
+  className?: string;
 }
 
 const TestimonialCard: React.FC<IPlansCard> = ({
   personal,
   free,
   organization,
+  className,
 }) => {
   // Determine which plan to display
   let test;
@@ -52,7 +54,9 @@ const TestimonialCard: React.FC<IPlansCard> = ({
   }
 
   return (
-    <div className="bg-myWhite w-full h-[458px] shadow-2xl p-[1rem] rounded-lg flex flex-col gap-[1rem] relative">
+    <div
+      className={`bg-myWhite w-full h-[458px] shadow-2xl p-[1rem] rounded-lg flex flex-col gap-[1rem] relative ${className}`}
+    >
       <div className="absolute top-[1rem] left-[1rem]">
         <img src="/assets/imgs/quote.png" alt="" />
       </div>

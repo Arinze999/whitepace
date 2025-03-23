@@ -2,7 +2,7 @@ import Button from '../../../components/Button';
 
 const TopSection = () => {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-10 lg:justify-center lg:items-center lg:gap-5">
       <h1 className="text-[46px] md:text-[60px] font-[700] text-left gap-3 lg:text-center">
         Try Whitepace today
       </h1>

@@ -5,7 +5,11 @@ import Img from '../components/Img';
 const Extension = () => {
   return (
     <div className="pt-[4rem] lg:pt-[2rem] h-fit lg:pb-[2rem] pb-[5rem] bg-myBlue text-myWhite z-[-2] relative">
-      <img src="/assets/svg/contourmobile.svg" alt="cont" className="absolute" />
+      <img
+        src="/assets/svg/contourmobile.svg"
+        alt="cont"
+        className="absolute"
+      />
       <div className="default-margin">
         <div className="flex justify-center items-center flex-col lg:flex-row lg:justify-between lg:items-start xl:items-center 2xl:place-items-center lg:gap-[1rem]">
           <div className="flex flex-col gap-5 lg:gap-1 justify-center lg:items-start items-center h-full">
@@ -26,10 +30,10 @@ const Extension = () => {
               icon
             />
           </div>
-          <div className="w-full flex justify-center items-center">
+          <div className="w-full justify-center items-center hidden lg:flex">
             <Img
               src="/assets/imgs/extend31.png"
-              className="mt-[4rem] xl:h-[28rem] 2xl:h-[34rem] lg:h-[20rem] md:h-[23rem] justify-center items-center"
+              className="mt-[4rem] xl:h-[28rem] lg:h-[20rem] md:h-[23rem] justify-center items-center"
               claz=" min-w-[40rem]"
             />
           </div>

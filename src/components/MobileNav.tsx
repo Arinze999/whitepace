@@ -6,10 +6,16 @@ type MobileNavProps = {
 };
 
 const navItems = [
-  { title: 'Products', dropdown: ['Product1', 'Product2', 'Product3'] },
-  { title: 'Solutions', dropdown: ['Solution1', 'Solution2', 'Solution3'] },
-  { title: 'Resources', dropdown: ['Resource1', 'Resource2', 'Resource3'] },
-  { title: 'Pricing', dropdown: ['Pricing1', 'Pricing2', 'Pricing3'] },
+  { title: 'Products', dropdown: ['Overview', 'Pricing', 'Customer stories'] },
+  {
+    title: 'Solutions',
+    dropdown: ['Colaboration', 'Productivity', 'Task Managemnt'],
+  },
+  {
+    title: 'Resources',
+    dropdown: ['Blog', 'Guides & Tutorials', 'Help center'],
+  },
+  { title: 'Pricing', dropdown: ['Free', 'Personal', 'Organization'] },
 ];
 
 const MobileNav: React.FC<MobileNavProps> = ({ isOpen }) => {
@@ -21,11 +27,11 @@ const MobileNav: React.FC<MobileNavProps> = ({ isOpen }) => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full bg-myBlue text-white z-[-10] transition-transform duration-300 mobile-nav ${
+      className={`fixed top-0 left-0 w-full bg-myBlue shadow pb-[1rem] text-white z-[-10] transition-transform duration-300 mobile-nav ${
         isOpen ? 'translate-y-0' : '-translate-y-full'
       }`}
     >
-      <ul className="flex flex-col w-full text-xl mt-[5rem]">
+      <ul className="flex flex-col w-full text-xl mt-[5rem] gap-5">
         {navItems.map((item, index) => (
           <li key={item.title}>
             {/* Header with title and chevron */}
@@ -33,7 +39,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ isOpen }) => {
               className="flex justify-between items-center px-4 py-2 cursor-pointer"
               onClick={() => handleToggle(index)}
             >
-              <span className="text-[16px]">{item.title}</span>
+              <span className="text-[16px] hover:text-dullYellow">{item.title}</span>
               <svg
                 className={`w-4 h-4 transition-transform duration-300 ${
                   openIndex === index ? 'rotate-180' : ''
@@ -59,7 +65,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ isOpen }) => {
             >
               <ul className="flex flex-col px-8 py-2 space-y-2">
                 {item.dropdown.map((dropItem) => (
-                  <li key={dropItem} className="text-[12px]">
+                  <li key={dropItem} className="text-[12px] cursor-pointer hover:text-dullYellow">
                     {dropItem}
                   </li>
                 ))}

@@ -1,0 +1,34 @@
+/* Define keyframes for the fade in animation */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Define keyframes for the fade in from below animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Base class for fade-in animation */
+  .animate-fade-in {
+    opacity: 0; /* initial state */
+    animation: fadeIn 1s forwards;
+  }
+  
+  /* Base class for fade-in-up animation */
+  .animate-fade-in-up {
+    opacity: 0; /* initial state */
+    animation: fadeInUp 1s forwards;
+  }
+  
